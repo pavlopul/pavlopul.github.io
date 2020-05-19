@@ -1,0 +1,496 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+* ul{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+body{
+ /* margin-top:15px;*/
+  background: color:#fff;
+}
+/*Перший блок*/
+header {
+  background-image: url(images/coffee-shop.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 98%;
+  position: relative;
+  margin-top: 1.111%;
+  margin-left: 1.111%;
+  margin-right: 1.111%;
+}
+ .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 30%;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+
+}
+.navigation a:hover {
+	transition: 0.3s;
+  cursor: pointer;
+  color: #f5d76e;
+}
+ .logo{
+  margin-top: 31px;
+  margin-left: 7.38637%;
+  margin-right: 3.9712%; 
+  position: relative;
+}
+ .welcome {
+ 	font-family: 'Playfair Display';
+ 	font-weight: 700;
+ 	color: #f5d76e;
+ 	font-size: 48px;
+ 	line-height: 24px;
+ 	margin-left: 165px;
+ 	margin-top: 171px;
+
+ 	}
+ 	.welcom{
+ 	 font-family: 'Lato';
+ 	 font-size: 16px ;
+ 	line-height: 24px;
+ 	color:#fff;
+ 	margin-left: 165px;	
+ 	margin-top: 27px;
+ 	}
+ 	.btn1{
+        font-family: 'Lato';
+ 		border: 2px solid #fff;
+ 		background-color: rgba(0,0,0,0);
+ 		color: #fff;
+ 		padding:16px 58px;
+ 		margin-left: 165px;
+ 		margin-top:37px;
+ 	}
+  /*Адаптив*/
+  @media (max-width: 1199px) {
+    .navigation{
+     padding: 0 25%;
+    }
+  }
+  @media(max-width: 991px) {
+  .navigation{
+     padding: 0 17%;
+    }
+    .navigation a {
+      font-size: 15px;
+    }
+}
+@media (max-width: 767px) {
+  .navigation{
+     padding: 0 10%;
+    }
+    .navigation a {
+      font-size: 16px;
+    }
+    .welcome {
+      font-size: 30px;
+    }
+    .welcom{
+      font-size: 13px;
+    }
+}
+@media (max-width: 650px) {
+  .logo{
+      display: none;
+    }
+    .welcome{
+      margin-left:90px;
+    }
+    .welcom{
+      margin-left: 90px;
+    }
+    .btn1{
+      padding: 12px 42px;
+    }
+}
+@media (max-width: 480px) {
+
+}
+
+ 	/*Другий блок*/
+ 	.header{
+ 		margin-top: 95px;
+ 		text-align: center;
+ 	}
+ 	.header-h2{
+ 		color: #2f2f2f;
+ 		font-family: 'Playfair Display';
+ 	    font-weight: 700;
+ 	    font-size: 30px;
+ 	    line-height: 24px;
+ 	  text-align: center;
+ 	  margin-bottom: 39px;
+
+ 	}
+   .sub-header{
+   	color: #28211f;
+   	font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+   }
+   .image{
+   	text-align: center;
+   	margin-top: 75px;
+   }
+   /*Третій блок*/
+   .menu-h2{
+   	color: #2f2f2f;
+   	font-family: 'Playfair Display';
+ 	font-weight: 700;
+ 	font-size: 30px;
+ 	line-height: 24px;
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	margin-top: 75px;
+   }
+   .menu{
+   	margin: 55px auto;
+   	display: flex;
+   	flex: row nowrap;
+   	justify-content: space-between;
+   	 margin-right: 15px;
+    margin-left: 15px;
+   }
+      .menu-coffee{
+      background: url(images/cup-of-coffee.png) center no-repeat;
+      opacity: 0.2;
+            }
+      .menu-tea{
+      	background: url(images/cup-tea.png) center no-repeat;
+      opacity: 0.3;
+      }
+      .menu-desert{ 
+      	background:url(images/placeholder-desert.png) center,
+      url(images/dessert.png) center no-repeat;
+      opacity: 0.9;
+      position: relative;
+      }
+      .menu-coffee, .menu-tea, .menu-desert{
+    	width: 430px;
+      	 max-width: 415px;
+        height: 295px;
+      }
+      .header-coffee{
+      position: absolute;
+      margin: 135px 127px;
+      }
+      .header-tea{
+      position: absolute;
+      margin: 135px 162px;
+      }
+      .header-desert{
+       position: absolute;
+       z-index: 40;
+       margin: 135px 98px;
+      }
+    .header-coffee, .header-tea, .header-desert{
+    	 
+      	opacity: 1;
+      	font-family: 'Playfair Display';
+ 	font-weight: 700;
+ 	font-size: 40px;
+ 	line-height: 24px;
+ 	text-align: center;
+ 	text-transform: uppercase;
+
+      }
+    .list-of-menu {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+    }
+    .list-of-menu-desserts{
+   display: flex;
+   justify-content: space-between;
+
+    }
+    .list-of-menu-coffee{
+     display: flex;
+    }
+    .list-of-menu-tea{
+     display: flex;
+    }
+    .list-of-menu-desserts, .list-of-menu-coffee, .list-of-menu-tea{
+    	 display: flex;
+    	 flex-direction: row;
+    	 flex-wrap: nowrap;
+    	  justify-content: space-between;
+    	 width: 215px;
+    }
+    
+   .list-of-menu, ul {
+   	font-family: 'Lato', sans-serif;
+    line-height: 28px;
+    list-style: none;
+   	 }
+   ul, .list{
+   font-family: 'Lato', sans-serif;
+   font-weight: 700;
+   	font-size: 14px;
+   }
+   ul, .price{
+   font-family: 'Lato', sans-serif;
+   font-weight: 400;
+   font-size: 13px ;
+   }
+   .see-full{
+   	font-family: 'Lato', sans-serif;
+   	font-weight: 700;
+   	 font-size: 12px ;
+   	text-transform: uppercase;
+   	padding: 19px 65px;
+   	background: rgba(0, 0, 0, 0);
+   	border:1.5px solid #39312f;
+   	margin-top: 55px;
+    margin-left: 565px;
+    color: 39312f;
+   }
+ .bg-coffee{
+ 	text-align: center;
+ 	margin-top: 70px;
+ }
+ /*Четвертий блок*/
+ .header-testimonials{
+    font-family: 'Playfair Display';
+ 	font-weight: 700;
+ 	font-size: 32px;
+ 	line-height: 24px;
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	margin-top: 75px;
+   }
+   .bg-testimonials-1{
+   background-color: #39312f;
+   height: 425px;
+   width: 98%;
+   margin: 60px 15px 80px 15px;
+   position: relative;	
+   }
+   .bg-testimonials-2{
+   	background: url(images/hands-with-cofee.png) no-repeat;
+   	background-size: ;
+   	height: 425px;
+   	width: 96%;
+   	position: absolute;
+   }
+   .bg-testimonials-01{
+   	 font-family: 'Playfair Display';
+ 	font-weight: 700;
+ 	font-size: 88px;
+ 	line-height: 21px;
+ 	/*color: #3f3736;*/
+ 	text-transform: uppercase;
+ 	position: absolute;
+ 	color:rgba(255, 255, 255, 0.031);
+ 	right: 369px;
+ 	top:32px;
+    }
+    .bg-testimonias-02{
+   	 font-family: 'Playfair Display';
+ 	font-weight: 700;
+ 	color: #3f3736;
+ 	text-transform: uppercase;
+ 	position: absolute;
+ 	bottom: 25px;
+ 	right: 25px;
+ 	}	
+  .slider{
+    position: absolute;
+    width: 268px;
+    height: 268px;
+    top: 98px;
+    right: 114px;
+  }
+ 	.slick-list {
+ 		overflow: hidden;
+ 	}
+ 	.slick-track{
+ 		display: flex;
+ 	}
+  .slider-img{
+    margin-left: 90px;
+  }
+ .slider h3{
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #f5d76e;
+    text-align: center;
+    margin: 15px auto; 
+  }
+  .slider p{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+     font-size: 16px ;
+     line-height: 21px;
+     color:#fff;
+   width: 262px; 
+}
+   .slider .slick-dots{
+   	display: flex;
+   	align-items: center;
+   	justify-content: center;
+    position: absolute;
+    left: 92px;
+    bottom: 0px;
+   }
+   .slider .slick-dots li{
+   list-style: none;
+   margin: 0px 5px;
+   }
+   .slider .slick-dots button{
+   	font-size: 0;
+   	width: 	8px;
+   	height: 8px;
+   	background-color: #fff;
+    border-radius: 50%;
+   }
+   .slider .slick-dots li.slick-active button{
+   	background-color: transparent;
+   	border: 1px solid #fff;
+   }
+   /*Пятий блок*/
+   .header-location{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 24px;
+    color: #28211f;
+    margin: 82px auto 0px auto;
+    text-align: center;
+   }
+   .bg-location-1{
+    background: url(images/map.png) no-repeat;
+    height: 425px;
+    width: 98%;
+    margin: 60px 15px 15px 15px;
+   position: relative;  
+   }
+   .bg-location-2{
+    background-color: #f5d76e;
+    width: 491px;
+    height: 425px;
+    position: absolute;
+   }
+   .bg-location-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 350px;
+    height: 270px;
+    margin-top: 60px;
+    margin-left: 65px;
+   }
+   .bg-location-item-Mon-Sat{
+ }
+
+   .bg-location-item-Sunday{
+    margin-top: -10px;
+  }
+   .bg-location-item h3{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    line-height: 28px;
+    font-size: 20px;
+      color: #28211f;
+   }
+   .bg-location-item span{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+   color: #28211f;
+   }
+  .bg-location-item-hour{
+    margin-top: 30px;
+  }
+  /*Подвал*/
+  .bg-footer{
+    background-color: #39312f;
+    height: 320px;
+    width: 100%;
+    position: relative;
+  }
+  .footer-socials{
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 93px 45%;
+    position: absolute;
+    text-align: center;
+}
+  .footer-socials:hover{
+  color:#f5d76e;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.footer-nav{
+   font-family: 'Lato', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+  line-height: 24px;
+text-align: center;
+color: #ffffff;
+padding-top:155px; 
+margin: 0px 34.5%;
+position: absolute;
+}
